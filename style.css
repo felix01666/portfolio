@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-boxs;
+    background-image: url('image 5.jpg');
+    background-size: cover;
+    overflow: auto;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    list-style: none;
+    padding: 0;
+}
+p{
+    font-size: 27px;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+.nam{
+    font-size: 42px;
+    font-weight: 500;
+    color: aquamarine;
+}
+h2{
+    font-weight: 800;
+    color: blueviolet;
+    animation: slideIn 4s ease infinite; /* 4 seconds duration,ease timing function,infinite loop*/
+}
+@keyframes slideIn {
+    0%{
+        transform: translateX(-100%); /* start off-screen to the left letter by letter  */
+    }
+    100%{
+        transform: translateX(0); /* move to the original position */
+    }
+}
+.info{
+    margin-top: 15%;
+    margin-left: 10px;
+}
+.fel{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+span{
+    color: blue;
+    font-weight: 500;
+}
+.foot{
+    color: #0000ff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.abt{
+    position: absolute;
+    right: 0;
+    color: #0000ff;
+}
+.head{
+    max-width: 600px;
+    max-height: 25%;
+    background-color: #7fffd4;
+    box-sizing: border-box;
+    border: 2px solid #ff0000;
+}
+em{
+    color: #ffff00;
+}
+.what{
+    max-width: 600px;
+    max-height: 20%;
+    background-color: bisque;
+    float: right;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    padding: 10px;
+    overflow: hidden;
+}
+.connect{
+    max-width: 600px;
+    height: 15%;
+    background-color: beige;
+    box-sizing: border-box;
+    border: 2px solid #ffff00;
+}
+.animated word{
+    display: inline-block;
+    overflow: hidden;
+}
+.letter{
+    display: inline-block;
+    transform: translateY(1em);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+@keyframes fadeInUp{
+   to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
